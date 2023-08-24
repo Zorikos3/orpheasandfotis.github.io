@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Picture.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             margin: 0;
@@ -23,7 +25,7 @@
             flex-direction: column;
         }
 
-        #background-video {
+        #background-image {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -54,6 +56,7 @@
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s ease;
+            margin: 5px;
         }
 
         .cta-button:hover {
@@ -66,18 +69,17 @@
             left: 10px;
         }
     </style>
-    <title>OrpheasXFotis</title>
+    <title>Zorikos3</title>
 </head>
 <body>
     <div class="intro-container">
-        <video autoplay muted loop id="background-video">
-            <source src="https://github.com/Zorikos3/-L/raw/main/dxjxls_2.mp4" type="video/mp4">
-        </video>
+        <img src="https://raw.githubusercontent.com/Zorikos3/-L/main/Background.png" alt="Background Image" id="background-image">
         <div class="intro-text">
-            <h1 class="fade-in">OrpheasAndFotis&nbsp;Page📄</h1>
+            <h1 class="fade-in">Zorikos3&nbsp;Site📄</h1>
             <p class="changing-text" id="changingText"></p>
-            <a href="https://pastebin.com/raw/FcGRBfuy" class="cta-button">Discord Account</a>
-            <a href="https://www.youtube.com/@Zorikos3" class="cta-button">YouTube</a>
+            <a href="https://pastebin.com/raw/FcGRBfuy" class="cta-button"><i class="fab fa-discord"></i></a>
+            <a href="https://www.youtube.com/@Zorikos3" class="cta-button"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/Zorikos_7" class="cta-button"><i class="fab fa-twitter"></i></a>
             <audio id="background-music" loop>
                 <source src="music.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
@@ -87,7 +89,7 @@
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
+                document.addEventListener("DOMContentLoaded", function() {
             const introText = document.querySelector(".intro-text");
             introText.style.opacity = 1;
             typeWriterEffect(introText.querySelector("h1"), 100);
@@ -110,15 +112,15 @@
 
         const changingText = document.getElementById("changingText");
         const texts = [
-            ["oorpheas loves his father..."],
-            ["check out my youtube!"],
-            ["fun fact im broke"],
-            ["im from ??❓❗"],
-            ["fotis was here🧐"],
-            ["check my discord"],
+            ["wwassup homie"],
+            ["welcome to my site.."],
+            ["im am zor aka orpheas"],
+            ["also im from..❗❓❓"],
+            ["anonymous was here🧐"],
+            ["check out my discord"],
             ["idk what to put here."],
-            ["i worry bout you..😥"],
-            ["thanks for visiting my site"]
+            ["i worry about you..😥"],
+            ["thanks for visiting>!"]
         ];
         let currentIndex = 0;
         let wordIndex = 0;
